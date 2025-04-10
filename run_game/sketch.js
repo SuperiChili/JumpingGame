@@ -169,9 +169,9 @@ function draw()
 
 function keyPressed() 
 {
-  if (keyCode === RIGHT_ARROW  && (scene ===1 || scene === 2 || scene === 3))
+  if ((scene === 1 || scene === 2 || scene === 3) && keyCode === 32)
     scene++;
-  if (key === ' ')
+  if (keyCode === 32)
   {
     spriteVelocityY = jumpForce;
     isJumping = true;
